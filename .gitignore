@@ -2,8 +2,12 @@
 
 # dependencies
 /node_modules
-/.pnp
-.pnp.js
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
 
 # testing
 /coverage
@@ -21,3 +25,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Local Netlify folder
+.netlify
