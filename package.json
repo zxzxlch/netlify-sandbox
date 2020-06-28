@@ -5,6 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "dev": "netlify dev",
+    "build": "concurrently \"npm:build:*\"",
     "build:app": "react-scripts build",
     "build:functions": "netlify-lambda build functions",
     "postinstall": "netlify-lambda install",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
+    "concurrently": "^5.2.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "netlify-lambda": "^1.6.3",
